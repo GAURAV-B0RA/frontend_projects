@@ -1,0 +1,142 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ 
+html , body{
+min-height: 100%;
+min-width: 100%;
+}
+nav{
+    height: 7vh;
+    width: 100vw;
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px 40px;
+   text-decoration: none;
+}
+.nav-links a:hover {
+    color:red;
+}
+.nav-links{
+    display: flex;
+    gap: 50px;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icon{
+    display: flex;
+    gap: 50px;
+    color: #fff;
+    font-weight: bolder;
+}
+.main{
+   min-height: 100vh;
+    min-width: 100vw;
+    background:url(images/samu2.png);
+    position:relative;
+    background-size:cover ;
+}
+.hero{
+    position: absolute;
+ min-height: 30%;
+ width: 50%;
+display: flex;
+flex-direction: column;
+top: 25%;
+left: 2%;
+}
+.hero span{
+font-size: 150px;
+font-weight: 500;
+background: url(images/fog.jpg);
+background-size: cover;
+font-family: "Uncial Antiqua", system-ui;
+background-position: center;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+line-height:1;
+
+}
+.hero p{
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    border: 3px solid white;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    padding: 10px;
+    margin: 20px 0;
+    color: white;
+}
+button:hover{
+    background-color: beige;
+    color: black;
+    scale: 1.1;
+    border: 2px solid black
+}
+.footer{
+    position: absolute;
+    top: 95%;
+    color: white;
+    font-size: 20px;;
+    height:10vh;
+    width: 100vw;
+}
+.footer i{
+    margin: 0 20px;
+}
+#mouse{
+    margin: 0 700px;
+}
+.toast{
+    position: absolute;
+    top: 89%;
+    left: 80%;
+    height:10vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    background: rgba(34, 28, 28, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+
+}
+.toast img{
+    height:10vh;
+    object-fit: contain;
+
+}
+.toast-content h5{
+    font-weight: bolder;
+    text-decoration:underline;
+    margin: 0 10px;
+    line-height: 1.5;
+    color: white;
+}
+.toast-content p{
+    margin: 0 10px;
+    color: white;
+}
+.toast-content a{
+    text-decoration: none;
+    font-weight: bolder;
+    cursor: pointer;
+    transition:color  1s;
+    color: white;
+    margin: 0 10px;
+    line-height:1.5 ;
+}
